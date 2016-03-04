@@ -85,7 +85,7 @@ describe Weather do
     end
 
     it "gets a string represent a city id instead of a number and should return an error" do
-      expect(@weather.setWeatherByCityId("OneHundredAndTwentryFive")['cod']).to eql(ERROR_CITY_NOT_FOUND['cod'])
+      expect(@weather.setWeatherByCityId("OneHundredAndTwentyFive")['cod']).to eql(ERROR_CITY_NOT_FOUND['cod'])
     end
   end
 
