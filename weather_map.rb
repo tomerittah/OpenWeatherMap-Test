@@ -3,7 +3,7 @@ require 'json'
 
 class Weather
 
-  # Constant Variables definition
+  # Constant Variables Definition
   URL = '/data/2.5/weather?'
   HOST = 'api.openweathermap.org'
   APPID = '&APPID=50f4012e8c7c01a21a478a0daa960eb5'
