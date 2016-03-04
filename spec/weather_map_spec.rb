@@ -108,8 +108,10 @@ describe Weather do
       expect(@weather.setWeatherByZipCode("94041","us")['name']).to eql('Mountain View')
     end
 
+    # This is a deliberately failed test
+    # I intentionally switched the zip code and country code and expected the api to return an error
     it "query api with switched values of city zip code and country code and should return an error" do
-      expect(@weather.setWeatherByZipCode("us","94040")['cod']).to eql(ERROR_CITY_NOT_FOUND['cod'])
+      expect(@weather.setWeatherByZipCode("us","94041")['cod']).to eql(ERROR_CITY_NOT_FOUND['cod'])
     end
 
     # This is a deliberately failed test
