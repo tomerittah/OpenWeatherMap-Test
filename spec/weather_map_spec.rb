@@ -33,7 +33,7 @@ describe Weather do
     # This is a deliberately failed test
     # There is no such city - "123" but for some reason it links me to a city called 'Tapa vald'
     it "query api with numbers instead of city name and I excpect it to return an error" do
-      expect(@weather.setWeatherByCityName("123")['name']).to eql(ERROR_CITY_NOT_FOUND['cod'])
+      expect(@weather.setWeatherByCityName("123")['cod']).to eql(ERROR_CITY_NOT_FOUND['cod'])
     end
   end
 
