@@ -9,7 +9,7 @@ class Weather
   APPID = '&APPID=50f4012e8c7c01a21a478a0daa960eb5'
 
   # defining the getter/setter for the object
-  attr_accessor :weather_data, :data
+  attr_accessor :weather_data
 
     # Constructs a Weather object.
     def initialize
