@@ -1,5 +1,5 @@
 # Use an official node.js runtime as a parent image.
-FROM node:12.3.1
+FROM node:latest
 
 # Set the working directory to /server
 WORKDIR /test
