@@ -1,4 +1,4 @@
-# Use an official node.js runtime as a parent image
+# Use an official node.js runtime as a parent image.
 FROM node:12.3.1
 
 # Set the working directory to /server
